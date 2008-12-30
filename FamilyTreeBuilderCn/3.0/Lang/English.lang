@@ -393,6 +393,7 @@
 
 [CommonMessages] ; Strings used in multiple locations in the application; stored in one place here for consolidation and consistency
 "#",                            "#"
+"<Private>",                    "[Private]", "2008-05-27 04:13:53" ; Used to denote a person whose name is privatized. Used when displaying privatized Smart Match results
 "Advisory",                     "注意" ; This string serves as the title of some informative messages
 "Bad character error",          "The project name contains one or more punctuation marks,\nwhich will prevent saving your project as a computer file.\nPlease remove these punctuation marks from the name"
 "Button Apply",                 "应用"
@@ -698,7 +699,7 @@
 
 
 [Countries]
-"AC",                           "Central African Republic"
+;"AC",                           "Central African Republic"
 "AD",                           "Andorra"
 "AE",                           "United Arab Emirates"
 "AF",                           "Afghanistan"
@@ -800,7 +801,6 @@
 "JM",                           "Jamaica"
 "JO",                           "Jordan"
 "JP",                           "Japan"
-;"KA",                           "Kazakhstan" ; Wiki = KZ
 "KE",                           "Kenya"
 "KG",                           "Kyrgyzstan"
 "KH",                           "Cambodia"
@@ -826,8 +826,6 @@
 "MA",                           "Morocco"
 "MC",                           "Monaco"
 "MD",                           "Moldova"
-;"ME",                           "Mayotte"
-;"MF",                           "Micronesia", "2007-11-15 13:00:40" ; Wiki = FM
 "MG",                           "Madagascar"
 "MH",                           "Marshall Islands" ; OLD=MI
 "MK",                           "Macedonia"
@@ -855,7 +853,6 @@
 "NO",                           "Norway"
 "NP",                           "Nepal"
 "NR",                           "Nauru"
-;"NT",                           "Netherlands Antilles" ; Wiki = AN
 "NU",                           "Niue", "2007-11-12 14:00:27"
 "NZ",                           "New Zealand"
 "OM",                           "Oman"
@@ -868,7 +865,6 @@
 "PL",                           "Poland" ; OLD= PO
 "PM",                           "Saint Pierre and Miquelon"
 "PN",                           "Pitcairn Islands"
-;"PO",                           "Poland" ; Wiki = PL
 "PR",                           "Puerto Rico"
 "PS",                           "West Bank and Gaza Strip"
 "PT",                           "Portugal"
@@ -907,7 +903,6 @@
 "TM",                           "Turkmenistan"
 "TN",                           "Tunisia"
 "TO",                           "Tonga"
-;"TP",                           "Sao Tome and Principe"
 "TR",                           "Turkey"
 "TT",                           "Trinidad and Tobago"
 "TV",                           "Tuvalu"
@@ -915,13 +910,11 @@
 "TZ",                           "Tanzania"
 "UA",                           "Ukraine" ; OLD = UK
 "UG",                           "Uganda"
-;"UK",                           "Ukraine" ; Wiki = UA
 "US",                           "United States"
 "UY",                           "Uruguay"
 "UZ",                           "Uzbekistan"
 "VA",                           "Vatican", "2007-11-12 08:05:16"
 "VC",                           "Saint Vincent and the Grenadines" ; OLD= VG
-;"VB",                           "British Virgin Islands" ; Wiki = VG
 "VE",                           "Venezuela"
 "VG",                           "British Virgin Islands" ; OLD= VB
 "VI",                           "United States Virgin Islands"
@@ -1467,6 +1460,7 @@
 "Select layout title",          "Save to File: Select Layout"
 "Select location title",        "Save to File: Select File Location"
 "Welcome message",              "Pick the format you want"
+"Writing",                      "Finishing", "2008-10-08 18:31:03"
 
 
 [EyeColors]
@@ -1865,13 +1859,12 @@
 [GWCreateNewProjectPublishSettings]
 "Benefits",                     "发布的好处", "2008-01-16 06:59:37"
 "Bottom text",                  "如果完成了，点击“下一步”继续"
-"Message",                      "A family site on MyHeritage.com provides an ideal location for showcasing your family tree online.\n\nKey benefits of a family site:\n - It is free!!!\n - You can share your family tree\n - Your family tree is visible only to people you invite.\n - Your data is backed up.", "2008-02-26 10:20:26"
+"Message",                      "It is recommended to publish the project to your own family site on MyHeritage.\nThis will back up your family tree, protecting you from data loss.\nIt will give you a place to showcase your family tree online to the people you choose to invite.\nBasic family sites are free.", "2008-12-11 10:33:30" ; The word BASIC was added
 "Publish project to a family site","Publish project to a family site on MyHeritage.com", "2008-02-14 09:02:04"
 "Select a family site:",        "选择一个家庭站点：", "2008-02-14 09:04:54"
 "Sign in as a different member","登录到另一个帐号"
 "Sign in as an existing member","已有会员帐号，登录"
 "Target site:",                 "发布的目标站点：", "2008-01-16 07:19:33"
-"Text",                         "语言"
 "Title",                        "发布设置", "2008-02-26 10:22:58"
 "You are not signed up",        "You are currently not signed in as a member.\nRegistration to MyHeritage is free."
 
@@ -1943,7 +1936,7 @@
 "Bad FTL Export",               "Sorry, unable to import information from this FTL file"
 "Bottom text",                  "When you are done, click 'Next' to proceed", "2007-05-27 23:55:01"
 "Browse",                       "浏览(&B)" ;!
-"Browse FTL title",             "Select a Family Tree Legend File to Import", "2007-05-28 00:11:08"
+"Browse FTL title",             "Select a Family Tree Legends File to Import", "2008-12-11 10:31:30" ; Family Tree Legends is the name of the software and should remain in English
 "Browse package title",         "Select a Package File to Import", "2007-05-28 00:09:31"
 "Browse title",                 "Select a Gedcom File to Import"
 "Error XML gedcom",             "This Gedcom file cannot be imported because its format is not supported.\nIt is an XML format that is not yet supported by %PRODUCTNAME%", "2007-10-01 06:47:28"
@@ -2205,10 +2198,10 @@
 "Number Complete",              "Individuals researched: %COMPLETE%/%TOTAL%", "2008-02-26 19:16:30"
 "Obtained",                     "Obtained", "2008-07-03 19:19:55"
 "Open",                         "View", "2008-06-24 20:53:12" ; Action on the Matches page for opening the web site containing the results
-"Options",                      "选项", "2007-09-27 18:05:32"
+"Options",                      "选项...", "2008-03-13 17:45:21"
 "Overview",                     "概述", "2007-09-27 18:05:04"
-"Overview Count",               "There are Smart Research results for 1 person", "2008-02-26 19:08:04"
-"Overview Counts",              "There are Smart Research results for %COUNT% people", "2008-02-26 19:07:50"
+"Overview Count",               "Smart Research performed for one person", "2008-12-23 13:58:49"
+"Overview Counts",              "Smart Research performed for %COUNT% people", "2008-05-25 11:01:29"
 "Overview Result People",       "Smart Research found one result for %PEOPLE% individuals", "2008-12-14 10:44:28"
 "Overview Result Person",       "Smart Research found one result for one individual", "2008-12-14 10:44:37"
 "Overview Results People",      "Smart Research found %RESULTS% results for %PEOPLE% individuals", "2008-07-23 19:04:00"
@@ -2227,7 +2220,7 @@
 "Querying Sites",               "Querying %COUNT% sites", "2008-03-17 16:57:09"
 "Recalculate",                  "更新", "2007-10-23 18:16:36"
 "Research All",                 "Research all people in tree", "2008-02-26 21:58:17"
-"Research All Message",         "Start the process of searching for Smart Results for all people in your tree", "2008-02-26 21:58:13"
+"Research All Message",         "Start the process of searching for Smart Research results for all people in your tree", "2008-05-25 10:27:00"
 "Research Complete",            "Complete", "2008-03-18 19:34:07"
 "Research Current",             "Research %NAME%", "2008-02-26 19:32:03"
 "Research Entire File",         "Performing a Smart Research on all people in your project may take a considerable amount of time.\nHowever, you can continue working on your project while the research is being performed.", "2008-02-26 20:14:13"
@@ -2260,12 +2253,16 @@
 "Show Only High",               "Only people with high quality results (%COUNT%)", "2008-03-03 18:13:14"
 "Show deleted",                 "Show deleted results (%COUNT%)", "2007-11-07 21:13:13"
 "Show low quality",             "Show low quality results (%COUNT%)", "2007-11-07 21:13:30"
+"Smart Research Current",       "Smart Research %NAME%", "2008-03-04 15:41:27"
+"Sorting",                      "Sorting, please wait...", "2008-10-14 02:24:54"
 "Source",                       "Source", "2007-09-27 18:04:57"
+"Spouse Count",                 "%COUNT% Spouses", "2008-08-04 22:19:35" ; NOTE: spouse is used in the generic plural form
+"Spouse Name",                  "Spouse: %NAME%", "2008-08-04 22:19:21" ; NOTE: spouse is used in the generic form
 "Status",                       "状态", "2007-09-27 18:03:14"
 "Status button",                "删除", "2008-01-17 23:56:32"
 "Stop One Research",            "Stop", "2008-05-02 18:44:16"
 "Stopping All",                 "Stopping Smart Research...", "2008-10-19 11:22:10"
-"Tooltip - double click icon",  "Double-click this icon for list of Smart Results? for %PERSON%", "2007-12-12 20:03:13"
+"Tooltip - double click icon",  "Double-click this icon for list of Smart Research results for %PERSON%", "2008-08-14 23:19:24"
 "Tooltip double click",         "Double-click to compare this result", "2007-11-06 20:27:32"
 "UnQueryable",                  "Smart Research cannot be performed for %PERSON%", "2008-06-09 22:39:09"
 "UnQueryable Status",           "None", "2008-07-03 18:46:27"
@@ -2553,6 +2550,8 @@
 "More language options",        "Advanced language options", "2008-04-16 12:35:56"
 "Secondary Title",              "Select Secondary Data Language", "2008-04-10 13:24:33"
 "Text",                         "%PRODUCTNAME% supports %NUMBER% languages. Select the language you'd like to use:\n", "2008-04-14 13:50:28"
+
+
 [Languages]
 "Change language",              "Change language...", "2008-05-25 13:38:05"
 "Data Language",                "Primary Data Language"
@@ -2588,7 +2587,7 @@
 "Excel warning families",       "You can edit this file in Excel, change information about families and people in the list and even add more families.", "2008-03-04 06:57:26"
 "Excel warning people",         "You can edit this file in Excel, change information about people in the list and even add more people.", "2008-03-04 06:57:10"
 "Excel warning photos",         "You can edit this file in Excel, change information about photos in the list and even add more photos.", "2008-03-04 06:57:37"
-"Excel warning2",               "When you save the file in Excel, you might get a warning that the file may contain features that are not compatible with CSV.  Click 'Yes' to confirm this warning.\n\nWhen you are done, you can import this updated file into the project by selecting the 'Import from Excel' option from the Edit menu.", "2008-03-04 06:37:15"
+"Excel warning2",               "When you save the file in Excel, you might get a warning that the file may contain features that are not compatible with CSV. Click 'Yes' to confirm this warning.\n\nWhen you are done, you can import this updated file into the project by selecting the 'Import from Excel' option from the Edit menu.", "2008-05-11 10:47:35"
 "Export",                       "Export to Excel", "2008-01-16 16:08:29"
 "Export families",              "Export list of families...", "2008-02-26 12:44:25"
 "Export families message",      "Export the information about the families in your project to a file", "2008-02-27 13:08:49"
@@ -3018,14 +3017,14 @@
 "Congratulations",              "You have successfully registered your %PRODUCTNAME%.\n\nEnjoy!"
 "Congratulations title",        "Congratulations!"
 "Country:",                     "Country of residence:", "2007-08-09 12:56:46"
-"Create user exists - correct password","A member with this email address and password already exists. \n\nDo you want to sign in as this member?"
+"Create user exists - correct password","A member with this email address and password already exists.\n\nDo you want to sign in as this member?", "2008-07-09 10:17:32"
 "Create user exists - wrong password","A member with this email address already exists.\nHowever, you entered an incorrect password for this member.\n\nYou can either create a member with a different email address\nor sign in as this member by clicking the 'Existing member' link below."
 "Email address:",               "Email address:"
 "Enter first name",             "Please enter your first name"
 "Enter last name",              "Please enter your last name"
 "Enter year of birth",          "Please enter or select a valid year of birth"
-"Enter zip code",               "Enter a vaild zip code"
-"Existing member",              "Existing member?"
+"Enter zip code",               "Enter a valid zip code", "2008-07-08 11:18:48"
+"Existing member",              "Already a member?", "2008-07-07 12:18:30"
 "Existing member message",      "If you're already a MyHeritage member, sign in using your email address and password. ", "2008-07-07 12:27:28"
 "Exit",                         "Exit"
 "First name:",                  "名："
@@ -3033,10 +3032,10 @@
 "Language:",                    "Language:", "2008-04-07 16:18:32"
 "Last name:",                   "姓："
 "Member Registration",          "Member Registration"
-"Message",                      "Fill in your membership information and click the Register button. Registration is free."
+"Message",                      "Fill in your information below and click 'Register Now'.\nRegistration is free. Join %MILLION% million other members already enjoying MyHeritage.com", "2008-11-30 08:38:04"
 "Message Update",               "Thank you for upgrading %PRODUCTNAME%.\n\nThis new version of %PRODUCTNAME% has useful new features.\nIt requires free registration on MyHeritage.", "2008-07-07 12:22:43"
-"Message Welcome",              "Welcome to %PRODUCTNAME% by %MYHERITAGE.COM%\n\nThis program is free and does not display any ads.\nIn order to use it, brief, free registration at MyHeritage is required below.\nMyHeritage has more than 19 million registered members and is known for its strict no-spam policy.\n\nFill in the form below and click Register Now.", "2007-11-28 11:40:20"
-"Must be in english",           "First Name and Last Name must be in English.", "2007-11-11 13:46:29" ; --DO NOT TRANSLATE--
+"Message Welcome",              "Welcome to %PRODUCTNAME% by %MYHERITAGE.COM%\n\nThis program is free and does not display any ads. In order to use it, brief, free registration at MyHeritage is required below.\nMyHeritage has more than %MILLION% million registered members and is known for its strict no-spam policy.\nFill in the form below and click Register Now.", "2008-11-30 08:38:47"
+"Must be in english",           "First Name and Last Name must be in English.", "2008-12-04 09:22:03"
 "New member",                   "Sign up as a new member", "2008-07-07 12:18:04"
 "New member message",           "If you are not yet a member, please register now. It's free and your email will never be shared or spammed.", "2008-07-07 12:25:43"
 "Password:",                    "Password:"
@@ -3475,7 +3474,7 @@
 "Occupation tooltip",           "关于职业的详细资料"
 "Occupation:",                  "职业："
 "Personal History",             "私人历史"
-"Religion tooltip",             "关于宗教的详细资料"
+"Privatize",                    "This person is privatized (do not publish details online)", "2008-07-03 07:02:23"
 "Religion tooltip",             "More Details About Religion"
 "Religion:",                    "宗教："
 "SSN/SIN:",                     "SSN/SIN:"
@@ -3986,14 +3985,8 @@
 
 
 [PublishingBackground]
-"Background publishing message","%PRODUCTNAME% can publish your projects to online family sites automatically while you continue working on your projects. ", "2008-02-17 08:15:00"
-;"Message",                      "A family site on MyHeritage.com provides an ideal location for showcasing your family tree online.\nHere are the key benefits of having a family site:"
+"Background publishing message","%PRODUCTNAME% can publish your family tree to your online family site, whenever you change your family tree. This serves as an automatic backup of your data, protecting you from loss or damage due to problems such as hard drive crashes, accidental deletions, computer malfunction and more.\n\nPublishing is secure and encrypted using state-of-the-art encryption.\n\nEnabling this is recommended. Even when enabled, no family tree project will be published without your separate authorization.", "2008-07-09 10:41:25"
 "Publish projects automatically","Enable Automatic Publishing (Online Backup)", "2008-03-31 15:09:58"
-;"Text SmartMatch",              "Smart Matching: Unique technology lets you expand your family tree by finding connections to family trees of other members."
-;"Text backup",                  "Backup: your data is automatically backed up online each time you publish, and can later be restored. This protects your family tree and photos from any catastrophe or computer damage."
-;"Text free",                    "Free: family sites are free. There are premium subscription plans for huge family trees or photo collections but you don't have to use them if you don't want to."
-;"Text privacy",                 "Privacy: your data will be visible only to you and to people you invite. Information on deceased ancestors can be made available to guests so relatives could find you on the Internet!"
-;"Text sharing",                 "Sharing: share your family tree with family members and friends in a beautiful, interactive 3D display. Coming soon: allow family members to collaborate with you on updating the family tree."
 "Title",                        "Automatic Publishing (Online Backup)", "2008-03-31 14:56:53"
 
 
@@ -4065,7 +4058,7 @@
 "Site",                         "Publish to family site", "2008-03-08 23:27:46"
 "Site Name",                    "To site: %SITENAME%", "2008-02-27 16:34:24"
 "Site list message",            "Select one of your sites from the list above to publish your project.", "2008-02-12 13:55:56"
-"Site name message",            "Enter a name that best describes your site. It is recommended to provide a name which includes the last name of the major family in the family tree.", "2008-02-13 08:56:41"
+"Site name message",            "Enter a name that best describes your site. Recommended: include the last name of the major family in your family tree. ", "2008-03-31 14:15:43"
 "Some people",                  "Some people", "2008-03-08 22:32:44"
 "Some photos",                  "Some photos", "2008-03-08 22:33:00"
 "Title",                        "Publishing Settings of %PROJECT%", "2008-03-03 17:36:21"
@@ -4104,7 +4097,7 @@
 "Error",                        "错误："
 "Family tree quota reached",    "Site '%SITE%' has reached maximum capacity. As a result, %PEOPLE% individuals from the family tree were not added. The '%SITE%' site is currently at the %PLAN% plan. It is advised to upgrade the capacity of this site to a better plan, which can be done <A HREF=%URL%>here</A>. After upgrading, publish your family tree again."
 "Family tree quota reached (all)","Site '%SITE%' has reached maximum capacity. As a result, no individuals from the family tree were could added. The '%SITE%' site is currently at the %PLAN% plan. It is advised to upgrade the capacity of this site to a better plan, which can be done <A HREF=%URL%>here</A>. After upgrading, publish your family tree again."
-"Last published on time",       "Last published on %TIME%", "2007-06-03 10:11:08"
+"Last published on time",       "Last published: %TIME%", "2008-03-08 20:01:54"
 "Loading project",              "加载项目..."
 "Loading project message",      "Loading project %PROJECT%...", "2008-01-06 08:08:34"
 "Never published",              "Never published", "2007-06-03 10:11:01"
@@ -4774,7 +4767,6 @@
 "Husband and Wife",             "%HUSBAND% and %WIFE%"
 "Individual",                   "Individual"
 "Initializing",                 "Initializing"
-;"Language Changed",             "The language changed since this report was generated.\nClick here to re-generate the report."
 "Male Descendants",             "Male Descendants of %NAME%"
 "Married",                      "Married"
 "MarriedPrefix",                "m. " ; Prefix to indicate the marriage date
@@ -4952,6 +4944,8 @@
 "Research",                     "Research"
 "Research Family Name",         "Research '%s'" ; NOTE: %s will be replaced with a family name
 "Research Family Name message", "Open research of selected family's name in browser window"
+"Research Former Name message", "Open research of former name in browser window", "2008-09-08 17:34:57"
+"Research Married Name message","Open research of married name in browser window", "2008-09-08 17:41:07"
 "Research Person Full Name",    "Research '%s'" ; NOTE: %s will be replaced with a full name (e.g., John Kennedy)
 "Research Person Full Name message","Research selected person's first and last name"
 "Research Person Last Name",    "Research '%s'" ; NOTE: %s will be replaced with a last name (e.g., Kennedy)
@@ -4994,7 +4988,7 @@
 "Unknown number of people",     "Unknown"
 "Warn about restoring old version","Warning: The backup you are attempting to restore was created before the last save time of the project."
 "Warning date labels",          "Last save:\nBackup created:"
-"Welcome message",              "This wizard will guide you through the process of restoring a project from a backup.\n\nYou can either restore the project from disk or from an online Family Pages site.\n\nPlease select where to restore your project from and click 'Next' to proceed."
+"Welcome message",              "This wizard will guide you through the process of restoring a project from a backup.\n\nYou can either restore the project from disk or from an online family site.\n\nPlease select where to restore your project from and click 'Next' to proceed.", "2008-12-11 23:59:21"
 "Welcome title",                "Project Restore: Welcome"
 
 
@@ -5449,7 +5443,7 @@
 "Confirmations per person",     "%NUMBER% confirmed", "2008-07-23 13:18:53"
 "Confirmed",                    "Confirmed", "2007-06-10 16:39:12"
 "Display matches for person",   "Display Smart Matches for %PERSON%", "2007-06-20 16:19:28"
-"Error - SmartMatch for tree not allowed","Smart Matching was turned off for your fanily tree", "2007-07-25 14:01:31"
+"Error - SmartMatch for tree not allowed","Smart Matching was turned off for your family tree", "2008-07-08 11:22:21"
 "Error - not registered",       "You are not signed up to %MYHERITAGE.COM% yet.", "2007-07-30 12:32:06"
 "Error - nothing new",          "Note: no new Smart Matches were found for this tree", "2007-07-26 14:06:29"
 "Error - site does not exist",  "The family site where you published you family tree does not exist on %MYHERITAGE.COM%.", "2007-07-17 12:51:21"
@@ -5472,6 +5466,9 @@
 "Matching relatives",           "匹配", "2007-06-20 21:14:01"
 "Name tooltip from my tree",    "%PERSON% from my family tree", "2007-07-10 10:29:08"
 "Name tooltip from tree",       "%PERSON% from '%TREE%' family tree", "2007-06-20 21:06:37"
+"New match per person",         "1 new", "2008-09-08 07:46:22"
+"New matches",                  "New matches", "2008-09-08 07:54:42"
+"New matches per person",       "%NUMBER% new", "2008-09-08 07:46:30"
 "No matches",                   "No Smart Matches", "2007-06-20 16:19:52"
 "No person selected",           "No person is selected for Smart Matches", "2007-06-20 16:19:57"
 "No relatives",                 "No relatives", "2007-05-21 08:03:04"
@@ -5603,7 +5600,7 @@
 "Birth in other tree",          "Birth details in '%SITE%':", "2008-07-08 11:23:23"
 "Birth in your tree",           "Birth details in your tree:", "2008-03-16 15:42:05"
 "Birth keep",                   "Keep the birth details you already have", "2007-12-25 08:47:51"
-"Birth less specific message",  "The birth details of this person in your tree has more information than the birth details in the other tree.", "2008-03-02 15:24:22"
+"Birth less specific message",  "The birth details of this person in your tree have more information than the birth details in the other tree.", "2008-12-11 10:37:09"
 "Birth merge",                  "Merge the birth details intelligently", "2008-06-19 05:06:41"
 "Birth message",                "The birth details of the person in your tree are different than in the other tree.", "2007-12-25 08:49:46"
 "Birth more specific message",  "The birth details of this person in your tree have less information than the birth details in the other tree.", "2008-12-11 10:37:41"
@@ -5651,6 +5648,7 @@
 "Family title",                 "Smart Match Merge Utility", "2008-07-08 11:24:21"
 "Father of person",             "father of %PERSON%", "2008-07-01 08:32:27"
 "Finish message",               "Click 'Finish' to perform the merge!", "2008-06-22 12:21:53"
+"Husband of person",            "husband of %PERSON%", "2008-07-01 08:40:13"
 "In other tree",                "In %SITE%", "2008-03-12 14:10:57"
 "In your tree",                 "In your tree", "2007-11-25 12:59:37"
 "Main person",                  "Main person", "2008-05-25 07:19:24"
